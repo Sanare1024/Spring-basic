@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class HelloController {
 
-    @GetMapping("hello")
+    @GetMapping("hello") //주소창에 니 localhost:8080/hello 하면 밑에 함수를 실행시켜줘
     public String hello(Model model){
         model.addAttribute("data", "hello!!");
         return "hello";
